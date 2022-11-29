@@ -9,3 +9,31 @@ div.box{
 	border-width:30px;
 	padding:20px;
 }
+
+.redText{
+	text_shadow : 3px 3px red;
+}
+
+span{
+	display : block;
+	width : 100px;
+	height : 60px;
+}
+div div{
+	display:inline-block;
+	border : 2px dotted orangered;
+	background:powderblue;
+	margin : 10px;
+	width : 60px;height:80px;
+}
+
+@keyframes textColorAnimation{
+	0% {color:blue;}
+	30% {color:green;}
+	100%{color:red;}
+}
+span{
+	animation-name:textColorAnimation;
+	animation-duration:5s;
+	animation-iteration-count : infinite;
+}

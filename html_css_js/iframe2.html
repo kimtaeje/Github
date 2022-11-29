@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>두번째 ifrmae</title>
+	<title>전환</title>
+<script>
+	function over(obj){
+		obj.src="./baseball.jpg";
+
+	}
+</script>
+
+<style>
+	span{
+		transition:font-size 2s;
+	}
+	span:hover{
+		font-size:500%;
+	}
+</style>
 </head>
 <body>
+<hr>
+<p><span>꽝!</span>글자에 마우스를 올려보세요</p>
+<hr>
+<a href="javascript:alert('클릭하셨나요?')">클릭해보세요</a>
 	
 </body></html>
