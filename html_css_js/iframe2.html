@@ -3,10 +3,22 @@
 <head>
 	<title>전환</title>
 <script>
-	function over(obj){
-		obj.src="./baseball.jpg";
-
+	function adder(a,b){
+		var sum;
+		sum= a+b;
+		return sum;
 	}
+	function gugudan(n){
+		var m = parseInt(n);
+		if(isNaN(m) || m<1||m>9){
+			alert("잘못입력하셨습니다.");
+			return;
+		}
+	for(var i=1;i<=9;i++){
+		document.write(m+"x"+i+"="+m*i+"<br>");
+	}
+}
+
 </script>
 
 <style>
@@ -19,9 +31,33 @@
 </style>
 </head>
 <body>
+<script>
+var grade;;
+var score = prompt("황기태님 점수를 입력하세요",100);
+score = parseInt(score);
+if(score >= 90)
+	grade="A";
+else if(score>=80)
+	grade="B";
+else if(score>=70)
+	grade="C";
+else if(score>=60)
+	grade="D";
+else
+	grade="F";
+document.write(score+"는"+grade+"입니다<br>")
+</script>
 <hr>
+<script>
+	var n = adder(24567,98374);
+	document.write("24567+98374는" + n +"<br>");
+</script>
 <p><span>꽝!</span>글자에 마우스를 올려보세요</p>
 <hr>
 <a href="javascript:alert('클릭하셨나요?')">클릭해보세요</a>
-	
+<hr>
+<script>
+	var n = prompt("구구단 몇단을 원하세요","");
+	gugudan(n);
+	</script>
 </body></html>

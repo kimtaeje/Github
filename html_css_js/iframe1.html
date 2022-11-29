@@ -26,17 +26,17 @@
 </style>
 </head>
 <body>
-	<h4>첫번째 iframe</h4>
+	<h3>지역변수와 전역변수</h3>
 <hr>
-<div>T</div>
-<div id="down">h</div>
-<div>a</div>
-<div>n</div>
-<div id="up">k</div>
-<div>s</div>
-<hr>
-<div>
-<p id="float">겨울방학이 시작됩니다
-다음학기에 만나요</p>
-</div>	
-</body></html>
+<script>
+var x=100;
+
+function f(){
+	var x=1;
+	
+	document.write("지역변수="+x);
+	document.write("<br>");
+	document.write("전역변수x="+this.x);
+}
+f();
+</script></body></html>
